@@ -27,7 +27,7 @@ pipeline {
                         if (env.CHANGE_TARGET?.toLowerCase() == env.MY_LABEL?.toLowerCase()) {
                             // Insert build steps here
                         } else {
-                            echo "Skipping build because the label '${env.MY_LABEL}' was not applied to the issue."
+                            echo "Skipping build because the label '${env.MY_LABEL}' was not applied to the issue...."
                             currentBuild.result = "SUCCESS"
                         }
                     } else {

@@ -31,7 +31,7 @@ pipeline {
                             currentBuild.result = "SUCCESS"
                         }
                     } else {
-                        echo "Skipping build because no issue or label was detected."
+                        echo "Skipping build because no issue or label was detected..."
                         currentBuild.result = "SUCCESS"
                     }
                 }
